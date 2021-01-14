@@ -20,6 +20,10 @@ jobs:
     strategy:
       matrix:
         ruby-version: ['2.6', '2.7', '3.0', 'jruby', 'truffleruby']
+        gemfile: [Gemfile, Gemfile.rack-1.x]
+
+    env:
+      BUNDLE_GEMFILE: ${{ matrix.gemfile }}
 
     steps:
     - uses: actions/checkout@v2
