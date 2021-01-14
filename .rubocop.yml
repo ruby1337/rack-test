@@ -2,9 +2,9 @@
 # https://github.com/bbatsov/rubocop/blob/master/config/default.yml
 AllCops:
   Exclude:
+    - 'vendor/**/*'
     - 'bin/*'
   Include:
-    - '{lib,spec}/**/*.rb'
     - 'Gemfile'
     - 'Gemfile.rack-1.x'
     - 'rack-test.gemspec'
